@@ -212,34 +212,7 @@ def fit(X_train, y_train, X_test, y_test, model, target, config, k, balancer=Tru
         
     
         
-    
-# -
 
-def fit_eval(X_train, y_train, X_test, y_test, model, target, config, k, balancer=True, hypertune=False, test_size = 0.3, model_args=None, save=True):
-    
-    #X = df.loc[:, df.columns != target]
-    #y = df.loc[:, df.columns == target]
-    
-
-    #X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = test_size, random_state = 42)
-    
-    fit()
-        
-    
-        
-    print ('fit model finished')   
-        
-    f1, precision, recall, accuracy,report = model_performance(classifier, X_test, y_test, average='macro')
-        
-    return {'classifier': classifier,
-            'train_time_elapsed': elapsed,
-            'f1': f1, 
-            'precision': precision,
-           'recall': recall,
-           'accuracy': accuracy,
-           'roc_auc': roc_auc, 
-           'classification_report': report,
-           'info': info }
 
 """
 def train_eval(X_train, y_train, X_test, y_test, model, target, config, k, balancer=True, hypertune=False, test_size = 0.3, model_args=None):
