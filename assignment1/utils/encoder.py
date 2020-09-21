@@ -9,7 +9,7 @@ def feature_encode_categorical(df, categorical_columns):
     encoders = {}
     for column in categorical_columns:
         encoders[column] = LabelEncoder()
-        #print (column)
+        print (column)
         df[column] = encoders[column].fit_transform(df[column])
     return df 
 
