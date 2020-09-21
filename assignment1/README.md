@@ -8,25 +8,25 @@ The default encoder for two datasets are OneHotEncoder. You can also select "Tar
 
 Dataset 1: Shelter Animal Outcome. The cleaned version after feature engineer is used in this project. Path: "data/animal_clean.csv"
 ```json
-'animal':
-        {'path': "data/animal_clean.csv",
-         'sep': ",",
-         'encoder': "OneHotEncoder",
-        'features': "AnimalType,SexuponOutcome,Breed,Color,Sex,neuter_status"),
-        'target': "OutcomeType"}
+{"animal":
+        {"path": "data/animal_clean.csv",
+         "sep": ",",
+         "encoder": "OneHotEncoder",
+        "features": "AnimalType,SexuponOutcome,Breed,Color,Sex,neuter_status",
+        "target": "OutcomeType"}}
 ```      
 Dataset 2: Adult data set. Dataset from UCI ML Repository 
 
 ```json
-'adult':
+{"adult":
         {
-            'path': "data/adult.csv",
-            'sep': ",",
-            'encoder': "OneHotEncoder",
+            "path": "data/adult.csv",
+            "sep": ",",
+            "encoder": "OneHotEncoder",
             "features": "workclass,education,marital-status,occupation,relationship,race,sex,native-country".        
              "target": "income"                    
             
-        }
+        }}
 ```
 
 ## Requirements 
