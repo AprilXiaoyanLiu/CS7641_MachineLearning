@@ -1,0 +1,4 @@
+sklearn==0.23.2
+imblearn
+pandas
+numpy
