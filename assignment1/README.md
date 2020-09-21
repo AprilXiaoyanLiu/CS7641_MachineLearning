@@ -23,7 +23,7 @@ Dataset 2: Adult data set. Dataset from UCI ML Repository
             "path": "data/adult.csv",
             "sep": ",",
             "encoder": "OneHotEncoder",
-            "features": "workclass,education,marital-status,occupation,relationship,race,sex,native-country".        
+            "features": "workclass,education,marital-status,occupation,relationship,race,sex,native-country",      
              "target": "income"                    
             
         }}
